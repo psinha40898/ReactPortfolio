@@ -89,7 +89,7 @@ function App() {
 // const updatedElement = React.cloneElement(firstElement, {}, `${numberofBase} * ${Math.pow(numberofBase, midList.length-1)}`);
 console.log("b4zmiddle:" + midList[midList.length-1].props.children);
 // updating the midlist
-for(let i = 0; i<midList.length-1; i++)
+for(let i = 0; i<midList.length; i++)
 {
   const firstElement = midList[i];
 
@@ -106,7 +106,7 @@ console.log("AFmiddle:" + midList[i].props.children);
 
 // updating the result list
 
-for(let i = 0; i<resList.length-1; i++)
+for(let i = 0; i<resList.length; i++)
 {
   const firstElement = resList[i];
 

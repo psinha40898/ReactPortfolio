@@ -64,7 +64,11 @@ const TextTransformer = ({ textList, middleList, resultsList }) => {
               initial={{ opacity: 0, scale: 0.75 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0 }}
-              transition={{ type: 'tween' }}
+              transition={{
+                duration: 0.8,
+                delay: 2 - ((.55)*index),
+                ease: [0, 0.71, 0.2, 1.01]
+              }}
             >
               {textList[index]}
             </motion.div>
@@ -75,7 +79,11 @@ const TextTransformer = ({ textList, middleList, resultsList }) => {
               initial={{ opacity: 0, scale: 0.75 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0 }}
-              transition={{ type: 'tween', delay: 0.75*(1/(index+.65))}}
+              transition={{
+                duration: 0.8,
+                delay: 2 - ((.55)*index),
+                ease: [0, 0.71, 0.2, 1.01]
+              }}
             >
               {middleList[index]}
             </motion.div>
@@ -86,7 +94,11 @@ const TextTransformer = ({ textList, middleList, resultsList }) => {
               initial={{ opacity: 0, scale: 0.75 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0 }}
-              transition={{ type: 'tween', delay: 0.75*(1/(index+.65))}}
+              transition={{
+                duration: 0.8,
+                delay: 2 - ((.55)*index),
+                ease: [0, 0.71, 0.2, 1.01]
+              }}
             >
               {resultsList[index]}
             </motion.div>
