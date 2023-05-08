@@ -1,7 +1,43 @@
+.Nunito {
+  font-family: 'Nunito', sans-serif;
+}
+.Kanit
+{
+  font-family: 'Kanit', sans-serif;
+
+}
+
+.lightweight
+{
+  font-weight:200;
+
+}
+
+.regularweight
+{
+  font-weight:400;
+}
+
+.big
+{
+  font-size: 5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .App {
   text-align: center;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;

@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import TextTransformer from "./transform.js";
 import ItemDetails from './ItemDetails.js';
+import { Button } from 'semantic-ui-react'
+import { Input } from 'semantic-ui-react'
+
 import "./App.css";
 
 
@@ -76,7 +79,7 @@ function PowerCalculator() {
         const fontSize = i * 4 + 10; // calculate font size based on index
         const style = { fontSize: `${fontSize}px`,  paddingLeft: `${indentLevel * 10}px`}; // create inline style object
         // print 5 =
-        objList.push(<div key = {i} style = {style}>{numberofBase}   is the base case now plug upwards</div>);
+        objList.push(<div key = {i} style = {style}>{numberofBase}</div>);
       }
     }
 // set my lists here
@@ -142,10 +145,13 @@ console.log("AFres:" +  resList[i].props.children);
 // the button pushes changes the state of objList
 return (
   <div>
-<input key={numObjects} type="number" onChange={setPower} />
-<input type ="number" onChange={setBase} />
-<button onClick={renderObjects}>Render Objects</button>
 
+<Input placeholder="Base" onChange={setBase} />
+<Input placeholder="Exponent" key={numObjects}  onChange={setPower} />
+<div>
+<Button basic onClick={renderObjects}>Render Objects</Button>
+</div>
+<br></br>
     {showObjects && (
       <div className="objects-container">
         {objects.map((el, index) => (
@@ -156,6 +162,7 @@ return (
         ))}
       </div>
     )}
+    <br></br>
     {showObjects && (
       <button onClick={() => {
         setShowObjects(false);
@@ -164,14 +171,14 @@ return (
       }}>Reset</button>
     )}
 
-<div>
+
 
 
 
 
 
 <TextTransformer textList={objects} middleList={middle} resultsList={results} />
-    </div>
+    
   </div>
   
 );
