@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Button, Input, Form, Grid } from 'semantic-ui-react'
+
 
 
 const TextTransformer = ({ textList, middleList, resultsList }) => {
@@ -13,8 +15,8 @@ const TextTransformer = ({ textList, middleList, resultsList }) => {
       const currentIndex = textList.indexOf(text);
 
       const newIncrementation = incrementation + 1;
-      console.log("transform.js debugger: The index" + currentIndex);
-      console.log("transform.js debugger: The top result is " + resultsList[0].props.children);
+      // console.log("transform.js debugger: The index" + currentIndex);
+      // console.log("transform.js debugger: The top result is " + resultsList[0].props.children);
 
 
       // if (currentIndex === 1)
@@ -110,7 +112,7 @@ const TextTransformer = ({ textList, middleList, resultsList }) => {
     return (
       <div>
         {textList.map((_, index) => renderElements(index))}
-        <button onClick={changeText}>Toggle Text</button>
+        <Button onClick={changeText}>Toggle Text</Button>
       </div>
     );
   };

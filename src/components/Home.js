@@ -9,13 +9,13 @@ function Home() {
     <div>
         <Container textAlign='center'>
     <MenuComponent></MenuComponent>
-    
+    {/* center */}
     
     </Container>
-    <Container textAlign='left' style={{ marginTop: '25rem' }}>
+    <Container textAlign='left' style={{ marginTop: '15rem' }}>
     {/* <h1 class = "Kanit regularweight big"> Pyush Sinha </h1> */}
     <motion.h1
-    class = "Kanit regularweight big"
+    className = "Kanit regularweight big"
       animate={{
         scale: [1, 1.0175, 1],
         opacity: [1, 0.85, 1],
@@ -27,25 +27,19 @@ function Home() {
       }}
  
     >
-      Pyush Sinha
+      pyush sinha
     </motion.h1>
 
     </Container>
 
   
-    <Container textAlign='right'>Right Aligned</Container>
+    {/* <Container textAlign='right'>Right Aligned</Container> */}
     <Container textAlign='justified'>
    
     
-      <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-        ligula eget dolor. Aenean massa strong. Cum sociis natoque penatibus et
-        magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-        ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
-        quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
-        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-        Nullam dictum felis eu pede link mollis pretium.
-      </p>
+      <Header size ="large" className = "Kanit regularweight notbig">
+        software engineer
+      </Header>
     </Container>
   </div>
   );

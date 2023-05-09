@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Input, Menu } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 
@@ -8,6 +8,15 @@ function MenuComponent() {
   const handleItemClick = (e, { name }) => {
     setActiveItem(name);
   };
+
+  useEffect(() => {
+    const path = window.location.pathname;
+    if (path === "/") {
+      setActiveItem("home");
+    } else if (path === "/power") {
+      setActiveItem("power");
+    }
+  }, []);
 
   return (
     <Menu secondary>
@@ -26,16 +35,6 @@ function MenuComponent() {
         onClick={handleItemClick}
       />
       
-      {/* <Menu.Menu position="right">
-        <Menu.Item>
-          <Input icon="search" placeholder="Search..." />
-        </Menu.Item>
-        <Menu.Item
-          name="logout"
-          active={activeItem === "logout"}
-          onClick={handleItemClick}
-        />
-      </Menu.Menu> */}
     </Menu>
   );
 }
