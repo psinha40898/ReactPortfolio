@@ -4,6 +4,7 @@ import { Button, Input, Form, Grid } from 'semantic-ui-react'
 
 
 
+
 const TextTransformer = ({ textList, middleList, resultsList }) => {
     const [text, setText] = useState(textList[0]);
     const [testBool, setBool] = useState(false);
@@ -59,17 +60,18 @@ const TextTransformer = ({ textList, middleList, resultsList }) => {
 
     const renderElements = (index) => {
       return (
-        <AnimatePresence key={index}>
+
+        <AnimatePresence>
           {text === textList[0] && (
             <motion.div
               key="A"
               initial={{ opacity: 0, scale: 0.75 }}
               animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0 }}
+         
               transition={{
                 duration: 0.8,
-                delay: 2 - ((.55)*index),
-                ease: [0, 0.71, 0.2, 1.01]
+                delay: 3.5 - ((.55)*index),
+                ease: "linear"
               }}
             >
               {textList[index]}
@@ -80,10 +82,11 @@ const TextTransformer = ({ textList, middleList, resultsList }) => {
               key="B"
               initial={{ opacity: 0, scale: 0.75 }}
               animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0 }}
+          
               transition={{
+         // Added delay to the initial transition
                 duration: 0.8,
-                delay: 2 - ((.55)*index),
+                delay: 3.5 - ((.55)*index),
                 ease: [0, 0.71, 0.2, 1.01]
               }}
             >
@@ -95,10 +98,11 @@ const TextTransformer = ({ textList, middleList, resultsList }) => {
               key="C"
               initial={{ opacity: 0, scale: 0.75 }}
               animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0 }}
+         
               transition={{
+               // Added delay to the initial transition
                 duration: 0.8,
-                delay: 2 - ((.55)*index),
+                delay: 3.5 - ((.55)*index),
                 ease: [0, 0.71, 0.2, 1.01]
               }}
             >
@@ -106,6 +110,7 @@ const TextTransformer = ({ textList, middleList, resultsList }) => {
             </motion.div>
           )}
         </AnimatePresence>
+    
       );
     };
   

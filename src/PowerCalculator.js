@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import TextTransformer from "./transform.js";
+import ListAnimationComponent from "./demotransform.js";
 import ItemDetails from './ItemDetails.js';
 import { Button, Input, Form, Grid } from 'semantic-ui-react'
 
@@ -99,7 +100,7 @@ for(let i = 0; i<midList.length; i++)
 {
   const firstElement = midList[i];
 
-const updatedElement = React.cloneElement(firstElement, {}, numberofBase + " * " + Math.pow(numberofBase, midList.length-i));
+  const updatedElement = React.cloneElement(firstElement, {}, numberofBase + " * " + Math.pow(numberofBase, midList.length-i));
 
 // Replace the original element with the updated element in the array
 // console.log("b4middle:" + midList[i].props.children);
@@ -133,11 +134,11 @@ resList[i] = updatedElement;
 
     setMiddle(midList);
     setResults(resList);
-    setShowObjects(true);
+    // setShowObjects(true);
     
     setTimeout(() => {
       setObjects(objList);
-      setShowObjects(true);
+      // setShowObjects(true);
     }, 0);
 
   };
@@ -182,7 +183,6 @@ return (
         setExponentInput("");
       }}>Reset</button>
     )}
-
 
 
 

@@ -1,9 +1,15 @@
+.forcedLowercase
+{
+  text-transform: lowercase;
+}
+
 .Nunito {
   font-family: 'Nunito', sans-serif;
 }
 .Kanit
 {
   font-family: 'Kanit', sans-serif;
+
 
 }
 
@@ -13,7 +19,7 @@
 
 .code
 {
-
+  text-transform: initial;
   font-family: 'Press Start 2P', cursive;
 }
 
@@ -31,6 +37,11 @@
 .big
 {
   font-size: 5rem;
+}
+
+.lessbig
+{
+  font-size: 3.5em;
 }
 
 .notbig

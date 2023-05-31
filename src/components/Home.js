@@ -7,7 +7,7 @@ import { Container, Header, Divider } from 'semantic-ui-react'
 function Home() {
   return (
     <div>
-        <Container textAlign='center'>
+        <Container>
     <MenuComponent></MenuComponent>
     {/* center */}
     
@@ -19,11 +19,12 @@ function Home() {
       animate={{
         scale: [1, 1.0175, 1],
         opacity: [1, 0.85, 1],
+        color: ["#3b3b3b", "#1a1b1c", "#6e6e6e", "#3b3b3b"],
       }}
       transition={{
         repeat: Infinity,
         duration: 5,
-        ease: "easeInOut",
+        ease: "linear",
       }}
  
     >
