@@ -28,27 +28,27 @@ function MenuComponent() {
    
     <Menu secondary>
       <Menu.Item 
-      className = "Nunito forcedLowercase"
+      className = "Kanit forcedLowercase"
         as={Link}
         to="/"
-        name="home"
+        name="me"
         active={activeItem === "home"}
         onClick={handleItemClick}
       />
-      <Menu.Item
-       className = "Nunito forcedLowercase"
+      {/* <Menu.Item
+       className = "Kanit forcedLowercase"
         as={Link}
         to="/power"
         name="power"
         active={activeItem === "power"}
         onClick={handleItemClick}
-      />
+      /> */}
 
     <Menu.Item
-       className = "Nunito forcedLowercase"
+       className = "Kanit forcedLowercase"
         as={Link}
         to="/thoughts"
-        name="thoughts"
+        name="my thoughts"
         active={activeItem === "thoughts"}
         onClick={handleItemClick}
       />

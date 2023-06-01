@@ -11,7 +11,7 @@ function Home() {
 
   return (
     <div>
-        <Container>
+        <Container textAlign='center'>
     <MenuComponent></MenuComponent>
     {/* center */}
     
@@ -33,9 +33,36 @@ function Home() {
     <Container textAlign='justified'>
    
     
-      <Header size ="large" className = "Kanit regularweight notbig">
-        computer science and software
-      </Header>
+      <motion.p
+      className='Kanit'
+      style = {{opacity: 0}}
+      animate ={controls}
+      >computer science and software
+      
+      
+      </motion.p>
+
+      <motion.p
+      className='Kanit'
+      style = {{opacity: 0}}
+      animate ={controls}
+      > ( add sections about me )      
+      
+      </motion.p>
+
+
+      
+      <motion.p
+      className='Kanit'
+      style = {{opacity: 0}}
+      animate ={controls}
+      > ( explain the website )      
+      
+      </motion.p>
+
+
+
+     
     </Container>
   </div>
   );

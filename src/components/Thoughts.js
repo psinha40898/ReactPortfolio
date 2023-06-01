@@ -28,12 +28,15 @@ function Thoughts() {
       style={{ opacity: 0 }}  // inline style to set initial opacity
       animate={controls}
     >
-      thoughts
+      my thoughts
     </motion.h1>
-    <p>test test test</p>
-    <p>test test test</p>
-    <p>test test test</p>
-    <p>test test test</p>
+    <motion.p 
+    className="Kanit"
+    style = {{opacity: 0}}
+    animate={controls}
+>
+    the good ones
+</motion.p>
 
 
     </Container>

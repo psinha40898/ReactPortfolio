@@ -4,7 +4,7 @@
 }
 .forcedLowercase
 {
-  text-transform: lowercase;
+  text-transform: lowercase !important;
 }
 
 .Nunito {

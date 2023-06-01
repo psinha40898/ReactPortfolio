@@ -5,7 +5,7 @@ import "./App.css";
 import 'semantic-ui-css/semantic.min.css';
 import Home from "./components/Home";
 import Power from "./components/Power";
-import Thoughts from "./components/Thoughts"
+import Thoughts from "./components/Thoughts";
 import Blog1 from "./components/blogs/Blog1";
 
 
