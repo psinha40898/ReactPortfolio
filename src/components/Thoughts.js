@@ -4,9 +4,13 @@ import { Link } from 'react-router-dom';
 import { Container, Divider, Grid, Image, Header} from 'semantic-ui-react'
 import { motion } from "framer-motion";
 import { useFadeInScaleAnimation } from "../customShizz/fadeInLoop.js"
+import  useTypingAnimation  from '../customShizz/useTypingAnimation.js';
+
 
 
 function Thoughts() {
+
+  const { displayedText, animationControls } = useTypingAnimation('these are the "good" ones...', 100);
 
   const controls = useFadeInScaleAnimation();
 
@@ -30,14 +34,12 @@ function Thoughts() {
     >
       my thoughts
     </motion.h1>
-    <motion.p 
-    className="Kanit"
-    style = {{opacity: 0}}
-    animate={controls}
->
-    the good ones
-</motion.p>
-
+    <motion.p
+      className="Kanit"
+      animate={animationControls}
+    >
+      {displayedText}
+    </motion.p>
 
     </Container>
 

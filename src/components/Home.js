@@ -2,11 +2,14 @@ import React, { useEffect } from 'react';
 import MenuComponent from "./Menu";
 import { motion, useAnimation } from "framer-motion";
 import "../App.css";
-import { useFadeInScaleAnimation } from "../customShizz/fadeInLoop.js"
+import { useFadeInScaleAnimation } from "../customShizz/fadeInLoop.js";
+import  useTypingAnimation  from '../customShizz/useTypingAnimation.js';
+
 
 import { Container, Header, Divider } from 'semantic-ui-react'
 function Home() {
-  
+  const { displayedText, animationControls } = useTypingAnimation('computer science and software', 75);
+
   const controls = useFadeInScaleAnimation();
 
   return (
@@ -33,33 +36,14 @@ function Home() {
     <Container textAlign='justified'>
    
     
-      <motion.p
-      className='Kanit'
-      style = {{opacity: 0}}
-      animate ={controls}
-      >computer science and software
-      
-      
-      </motion.p>
-
-      <motion.p
-      className='Kanit'
-      style = {{opacity: 0}}
-      animate ={controls}
-      > ( add sections about me )      
-      
-      </motion.p>
-
-
-      
-      <motion.p
-      className='Kanit'
-      style = {{opacity: 0}}
-      animate ={controls}
-      > ( explain the website )      
-      
-      </motion.p>
-
+    <motion.p
+      className="Kanit"
+      animate={animationControls}
+    >
+      {displayedText}
+    </motion.p>
+ <p> I'm going to add some fade in animations here that explain more about me</p>
+ <p> I'm going to add some fade in animations here that explain more about the pages on this website</p>
 
 
      
