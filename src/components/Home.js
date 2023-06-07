@@ -6,9 +6,13 @@ import { useFadeInScaleAnimation } from "../customShizz/fadeInLoop.js";
 import  useTypingAnimation  from '../customShizz/useTypingAnimation.js';
 
 
-import { Container, Header, Divider } from 'semantic-ui-react'
+import { Container, Header, Divider, Image } from 'semantic-ui-react'
 function Home() {
-  const { displayedText, animationControls } = useTypingAnimation('computer science and software', 75);
+  const { displayedText: home_subtext, animationControls: home_subanimation } = useTypingAnimation('computer science and software', 75);
+  const { displayedText: home_subtext1, animationControls: home_subanimation1 } = useTypingAnimation(' " my life is a convex combination of English and mathematics . . .', 65);
+  const { displayedText: home_subtext2, animationControls: home_subanimation2 } = useTypingAnimation('That was part of the bargain. " ', 200);
+  const { displayedText: home_subtext3, animationControls: home_subanimation3 } = useTypingAnimation('    - Donald Knuth', 450);
+
 
   const controls = useFadeInScaleAnimation();
 
@@ -28,22 +32,63 @@ function Home() {
     >
       pyush sinha
     </motion.h1>
-
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}  transition={{duration:2.5, delay: 1, type: "spring"}}> 
+  </motion.div>
     </Container>
 
   
-    {/* <Container textAlign='right'>Right Aligned</Container> */}
+
     <Container textAlign='justified'>
    
     
-    <motion.p
+    {/* <motion.p
       className="Kanit"
-      animate={animationControls}
+      animate={home_subanimation}
     >
-      {displayedText}
+      {home_subtext}
+    </motion.p> */}
+    <motion.h2
+      className="Kanit regularweight italic"
+      animate={home_subanimation1}
+    >
+      {home_subtext1}
+    </motion.h2>
+    <motion.h2
+      className="Kanit regularweight italic"
+      animate={home_subanimation2}
+    >
+      {home_subtext2}
+    </motion.h2>
+    <motion.h2
+      className="Kanit regularweight"
+      animate={home_subanimation3}
+    >
+      {home_subtext3}
+    </motion.h2>
+    <Image src='https://i.imgur.com/qv42Rqz.jpeg' size='small' floated = 'left' circular bordered /> 
+
+    <motion.p  className = "Kanit regularweight" initial={{ opacity: 0 }} animate={{ opacity: 1 }}  transition={{duration:2.5, delay: 5, type: "spring"}} >
+
+At every level of abstraction, computers find a way to remain fascinating beyond the wildest imaginations of 
+those who walked decades before us. Still today, for many people, the abilities of computation remain  a mystical force that pariticpates in every
+aspect of modern life. The relative youth of computer science as a field can be most strikingly identified by the regurgutation of explanations that consent to the mystification of our precious subject.
+My desire to propogate demystified explanations of integral concepts related to computers can be seen in the page labeled "my thoughts".
     </motion.p>
- <p> I'm going to add some fade in animations here that explain more about me</p>
- <p> I'm going to add some fade in animations here that explain more about the pages on this website</p>
+
+    
+    <motion.h1 initial={{ opacity: 0 }} 
+      animate={{
+        opacity: 1
+      }}
+      transition={{
+        duration: 2.5,
+        delay: .75,
+        ease: "easeInOut",
+      }}
+         
+         className="Nunito">
+   I'm a software engineer.
+  </motion.h1>
 
 
      

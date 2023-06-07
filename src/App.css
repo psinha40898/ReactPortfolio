@@ -2,6 +2,10 @@
 
   background-color: #282c34;
 }
+
+img {
+  border: 2px solid black;
+}
 .forcedLowercase
 {
   text-transform: lowercase !important;
@@ -26,7 +30,10 @@
   text-transform: initial;
   font-family: 'Press Start 2P', cursive;
 }
-
+.italic
+{
+font-style: italic;
+}
 .lightweight
 {
   font-weight:200;

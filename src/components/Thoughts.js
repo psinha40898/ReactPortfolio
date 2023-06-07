@@ -9,8 +9,15 @@ import  useTypingAnimation  from '../customShizz/useTypingAnimation.js';
 
 
 function Thoughts() {
+// I have to make it so I can pass any text into this function
+// In order for this function call to work with this function, the variable must be named displayedText
+// this means I cannot do it for multiple strings on different parts of the page
+  const { displayedText:subtitleText,  animationControls: subtitleAnimation } = useTypingAnimation('these are the "good" ones...', 100);
+  const { displayedText: blog1Text, animationControls: blog1Controls } = useTypingAnimation('languages', 250);
 
-  const { displayedText, animationControls } = useTypingAnimation('these are the "good" ones...', 100);
+  const { displayedText: blog2Text, animationControls: blog2Controls } = useTypingAnimation('recursion', 250);
+
+
 
   const controls = useFadeInScaleAnimation();
 
@@ -36,9 +43,9 @@ function Thoughts() {
     </motion.h1>
     <motion.p
       className="Kanit"
-      animate={animationControls}
+      animate={subtitleAnimation}
     >
-      {displayedText}
+      {subtitleText}
     </motion.p>
 
     </Container>
@@ -50,15 +57,26 @@ function Thoughts() {
       <Grid.Column>
 
         <Link to= "blogs/Blog1">
-      <Header size ="large" className = "Kanit regularweight notbig">
-            languages
-      </Header>
+        <motion.header
+      className="Kanit notbig"
+      animate={blog1Controls}
+    >
+      {blog1Text}
+    </motion.header>
       </Link>
       </Grid.Column>
       <Grid.Column>
-      <Header size ="large" className = "Kanit regularweight notbig">
-            recursion
-      </Header>
+      <Link to= "/power">
+
+      <motion.header
+      className="Kanit notbig"
+      animate={blog2Controls}
+    >
+      {blog2Text}
+    </motion.header>
+    </Link>
+
+    
       </Grid.Column>
 
     </Grid.Row>
@@ -66,7 +84,7 @@ function Thoughts() {
     <Grid.Row>
       <Grid.Column>
       <Header size ="large" className = "Kanit regularweight notbig">
-            blog3
+            memory
       </Header>
       </Grid.Column>
       <Grid.Column>
