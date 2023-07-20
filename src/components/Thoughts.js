@@ -41,17 +41,33 @@ function Thoughts() {
     >
       my thoughts
     </motion.h1>
-    <motion.p
-      className="Kanit"
+    <motion.h2
+      className="Kanit regularweight"
       animate={subtitleAnimation}
     >
       {subtitleText}
+    </motion.h2>
+    <motion.p
+      className="Kanit"
+       
+    >
+      computers can seem really mystical
+      <br></br>
+      and computer science is a young field
+      <br></br>
+      that youth can be seen by the regurgitation of explanations that consent to that mystification
+      <br></br>
+      these posts are primarily to reinforce my own understanding of topics, but i also hope that they are clear for people new to the field
+      <br></br>
     </motion.p>
 
-    </Container>
+    
+          </Container>
 
 
       <Container text>
+        <br></br>
+        <br></br>
     <Grid className="center aligned"  columns={2} divided>
     <Grid.Row>
       <Grid.Column>
@@ -84,12 +100,12 @@ function Thoughts() {
     <Grid.Row>
       <Grid.Column>
       <Header size ="large" className = "Kanit regularweight notbig">
-            memory
+            complexity
       </Header>
       </Grid.Column>
       <Grid.Column>
       <Header size ="large" className = "Kanit regularweight notbig">
-            blog 4
+            bootstrapping
       </Header>
       </Grid.Column>
 
@@ -97,7 +113,59 @@ function Thoughts() {
   </Grid>
 
   </Container>
+<Container>
 
+<motion.p
+      className="Kanit"
+   
+    >
+      done:
+      <ul>
+      <li>
+        languages
+      </li>
+      <li>
+        the call stack
+      </li>
+      </ul>
+      soon:
+      <ul>
+      <li>
+        complexity
+      </li>
+      <li>
+        bootstrapping
+      </li>
+      <li>
+      memory part 1 (abstraction)
+      </li>
+
+   
+
+      </ul>
+      later:
+      <ul>
+
+      <li>
+        neural networks 1: xor
+      </li>
+      <li>
+        neural networks 2: training
+      </li>
+      <li>
+        memory part 2 (physical)
+      </li>
+      <li>
+        neural networks 3 : images
+      </li>
+      <li>
+        neural networks 4 : languages
+      </li>
+
+
+      </ul>
+    </motion.p>
+</Container>
 
 
       </div>

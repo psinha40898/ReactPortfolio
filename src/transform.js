@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect} from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Button, Input, Form, Grid } from 'semantic-ui-react'
 
@@ -13,6 +13,10 @@ const TextTransformer = ({ textList, middleList, resultsList }) => {
 
   
     const changeText = () => {
+      if (textList.length === 0 || middleList.length === 0 || resultsList.length === 0) {
+        // Don't do anything if any of the lists are empty
+        return;
+      }
       const currentIndex = textList.indexOf(text);
 
       const newIncrementation = incrementation + 1;
@@ -57,6 +61,21 @@ const TextTransformer = ({ textList, middleList, resultsList }) => {
     //   const nextIndex = (currentIndex + 1) % textList.length;
     //   setText(textList[nextIndex]);
     };
+    // Call changeText immediately when the component mounts
+    useEffect(() => {
+      changeText();
+  }, [textList, middleList, resultsList]); // Empty dependency array, so this effect only runs once on mount
+    useEffect(() => {
+      // Start a timer when 'text' changes
+      const timer = setTimeout(() => {
+        changeText();
+      }, 6000); // Adjust this value as needed to control the speed of the loop
+
+      // Cleanup function to clear the timer if the component is unmounted
+      return () => clearTimeout(timer);
+    }, [text]); // Dependency array. changeText is called every time 'text' changes
+
+ 
 
     const renderElements = (index) => {
       return (
@@ -117,7 +136,7 @@ const TextTransformer = ({ textList, middleList, resultsList }) => {
     return (
       <div>
         {textList.map((_, index) => renderElements(index))}
-        <Button onClick={changeText}>Toggle Text</Button>
+        {/* <Button onClick={changeText}>next</Button> */}
       </div>
     );
   };

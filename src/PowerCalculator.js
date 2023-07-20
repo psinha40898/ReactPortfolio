@@ -157,7 +157,7 @@ return (
       
    </Form.Group>
    <Form.Group>
-   <Form.Button basic onClick={renderObjects}>Render Objects</Form.Button> 
+   <Form.Button basic onClick={renderObjects}>start!</Form.Button> 
    </Form.Group>
   </Form>
   </Grid>
