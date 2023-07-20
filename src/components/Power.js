@@ -1,7 +1,7 @@
 import React from "react";
 import MenuComponent from "./Menu";
 import PowerCalculator from "../PowerCalculator";
-import { Container, Divider } from 'semantic-ui-react'
+import { Container } from 'semantic-ui-react'
 import { motion } from "framer-motion";
 
 function Power() {

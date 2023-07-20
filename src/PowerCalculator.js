@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import TextTransformer from "./transform.js";
-import ListAnimationComponent from "./demotransform.js";
-import ItemDetails from './ItemDetails.js';
-import { Button, Input, Form, Grid } from 'semantic-ui-react'
+
+import { Form, Grid } from 'semantic-ui-react'
 
 import "./App.css";
 

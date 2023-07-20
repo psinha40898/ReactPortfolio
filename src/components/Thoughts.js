@@ -1,7 +1,7 @@
 import React from "react";
 import MenuComponent from "./Menu";
 import { Link } from 'react-router-dom';
-import { Container, Divider, Grid, Image, Header} from 'semantic-ui-react'
+import { Container, Grid, Header} from 'semantic-ui-react'
 import { motion } from "framer-motion";
 import { useFadeInScaleAnimation } from "../customShizz/fadeInLoop.js"
 import  useTypingAnimation  from '../customShizz/useTypingAnimation.js';
@@ -15,7 +15,7 @@ function Thoughts() {
   const { displayedText:subtitleText,  animationControls: subtitleAnimation } = useTypingAnimation('these are the "good" ones...', 100);
   const { displayedText: blog1Text, animationControls: blog1Controls } = useTypingAnimation('languages', 250);
 
-  const { displayedText: blog2Text, animationControls: blog2Controls } = useTypingAnimation('recursion', 250);
+  const { displayedText: blog2Text, animationControls: blog2Controls } = useTypingAnimation('call stack', 250);
 
 
 
@@ -125,7 +125,7 @@ function Thoughts() {
         languages
       </li>
       <li>
-        the call stack
+        call stack
       </li>
       </ul>
       soon:
@@ -137,7 +137,7 @@ function Thoughts() {
         bootstrapping
       </li>
       <li>
-      memory part 1 (abstraction)
+      memory 1: abstraction
       </li>
 
    
@@ -153,7 +153,7 @@ function Thoughts() {
         neural networks 2: training
       </li>
       <li>
-        memory part 2 (physical)
+        memory 2: physical
       </li>
       <li>
         neural networks 3 : images

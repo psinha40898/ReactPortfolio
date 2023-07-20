@@ -1,14 +1,13 @@
-import React, { useEffect } from 'react';
+import React, { } from 'react';
 import MenuComponent from "./Menu";
-import { motion, useAnimation } from "framer-motion";
+import { motion, } from "framer-motion";
 import "../App.css";
 import { useFadeInScaleAnimation } from "../customShizz/fadeInLoop.js";
 import  useTypingAnimation  from '../customShizz/useTypingAnimation.js';
 
 
-import { Container, Header, Divider, Image } from 'semantic-ui-react'
+import { Container, Image } from 'semantic-ui-react'
 function Home() {
-  const { displayedText: home_subtext, animationControls: home_subanimation } = useTypingAnimation('computer science and software', 65);
   const { displayedText: home_subtext1, animationControls: home_subanimation1 } = useTypingAnimation(' " my life is a convex combination of English and mathematics . . .', 65);
   const { displayedText: home_subtext2, animationControls: home_subanimation2 } = useTypingAnimation('That was part of the bargain. " ', 65);
   const { displayedText: home_subtext3, animationControls: home_subanimation3 } = useTypingAnimation('    - Donald Knuth', 65);
