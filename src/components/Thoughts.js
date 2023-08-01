@@ -51,7 +51,7 @@ function Thoughts() {
       className="Kanit"
        
     >
-      computers can seem really mystical
+      computers can seem really mystical test
       <br></br>
       and computer science is a young field
       <br></br>
