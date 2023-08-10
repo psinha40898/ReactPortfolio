@@ -60,7 +60,7 @@ I always felt that I really learned the most about computer science when interac
 
 
   <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }}  transition={{duration:2.5, delay: 1, type: "spring"}} >
-  I was talking to someone who really liked developing web applications. At the time, I was certain that I would grow to be an expert in the C programming language  who only bothered with computer science at the lower levels where “things really happened.” I was doing all the regular  things that C programmers do to manifest a false sense of superiority over people who develop usable software; I was making my own useless  bare-bones operating system, I was looking into embedded boards that high school students 3 years my junior were able to master, and I was even, as much as this pains me to admit, considering ways to contribute to open source device driver projects. Somewhere along my delusion I was able to propagate this phony sense of superior understanding to my aforementioned web developer friend.
+  I was talking to someone who really liked developing web applications. At the time, I was certain that I would grow to be an expert in the C programming language  who only bothered with computer science at the lower levels where “things really happened.” I was doing all the regular  things that C programmers do to manifest a false sense of superiority over people who develop usable software; I was making my own useless  bare-bones operating system, I was looking into embedded boards that high school students 3 years my junior were able to master, and I was even considering ways to contribute to open source device driver projects. Somewhere along my delusion I was able to propagate this phony sense of superior understanding to my aforementioned web developer friend.
    
   </motion.p>
 
@@ -104,10 +104,10 @@ I always felt that I really learned the most about computer science when interac
       }}
          
          className="Nunito">
-but there is always some connection to
+but there is always some connection
   </motion.h1>
   <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }}  transition={{duration:3.25, delay: 2.25, type: "spring"}}>
-  The only thing that my dear Reactaoholic friend was missing was nothing more than a simple consideration. What is the relationship my program has to machine code? For experienced developers, this question is easily answered. But for students and new developers, the loss of this connection is what allows for a really skilled react developer to even consider that a less than average C programmer might know more about the inner workings of how computers work than they do.
+  The only thing that my dear Reactaoholic friend was missing was a simple consideration: the relationship their programs had to machine code. For experienced developers, this question is easily answered. But for students and new developers, the loss of this connection is what allows for a very promising react developer to even consider that a less than average C programmer might know more about the inner workings of how computers work than they do.
   </motion.p>
   <motion.h1 initial={{ opacity: 0 }} 
       animate={{
@@ -120,11 +120,14 @@ but there is always some connection to
       }}
          
          className="Nunito">
-machine code.
+to machine code.
   </motion.h1>
 
   <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }}  transition={{duration:4.25, delay: 2.25, type: "spring"}}>
-  A program’s relationship to machine code is responsible for many of its important details. And that relationship is greatly impacted, often defined, by the programming language the program is written in. A simple Python program (in this writing, Python means CPython) may yield an identical output to its C equivalent, but the C program can be perceived as more robust in that it can execute on systems that cannot afford an installation of the Python runtime environment. Similarly, a neural network (not a simple program) written in both languages may be identical when executed, but the Python implementation can be seen as more robust because: it is easier to maintain and build upon due to the abbreviated nature of Python syntax, and it is simply not feasible for the program to execute on any hardware which could not handle a Python installation. The key difference is that Python utilizes a runtime environment to yield more portable and abbreviated code, while C has no such requirement. In cases where the cost of that requirement is negligible, Python is always the choice. In the cases where the cost is detrimental, a fast language like C may be the best choice.
+  A program’s relationship to machine code is responsible for many of its important details. And that relationship is greatly impacted, often defined, by the implementation of the programming language that is used. Crucial to this concept is the differentiation between a programming language and its implementation. A programming language is a set of rules to follow. An implementation is the product of engineering those rules to result in computation.
+      </motion.p>
+      <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }}  transition={{duration:4.25, delay: 2.25, type: "spring"}}>
+      A simple Python program (in this writing, Python means the CPython implementation) may yield an identical output to its C equivalent, but the C program can be perceived as more robust in that it can execute on systems that cannot afford an installation of the Python runtime environment. Similarly, a neural network (not a simple program) written in both languages may be identical when executed, but the Python implementation can be seen as more robust because: it is easier to maintain and build upon due to the portable nature of the implementation, and it is simply not feasible for the program to execute on any hardware which could not handle a Python installation. The key difference is that Python utilizes a runtime environment to yield more portable and abbreviated code, while C has no such requirement. In cases where the cost of that requirement is negligible, Python is can be the best choice. In the cases where that cost is detrimental, a fast language like C is a better choice.
       </motion.p>
       <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }}  transition={{duration:4.25, delay: 2.25, type: "spring"}}>
 
@@ -157,8 +160,22 @@ interpreters are compiled programs
  And for my web developing friend, it means that the browser which is executing their code serves the same function as the runtime environment does in Python and Java. 
 
  </motion.p>
- IN PROGRESS
- <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }}  transition={{duration:4.25, delay: 2.25, type: "spring"}}>
+ <motion.h1 initial={{ opacity: 0 }} 
+      animate={{
+        opacity: 1
+      }}
+      transition={{
+        duration: 2.5,
+        delay: 5,
+        ease: "easeInOut",
+      }}
+         
+         className="Nunito">
+that's "how things really happened"
+  </motion.h1> <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }}  transition={{duration:4.25, delay: 2.25, type: "spring"}}>
+
+  A programming language is simply a set of rules. The implementation being used defines your program’s relationship to machine code. Some implementations dictate that programs are completely compiled to a target machine’s code. Other implementations prefer feeding a program through an intermediary program that is already compiled, like a runtime machine or web browser. This fact is vital towards understanding how a high level program, like a React application or an advanced Python project, interacts with the hardware of a machine; investigating the intermediary program is sufficient to begin the journey to understand “how things really happened.”
+
  </motion.p>
  </Container>
 

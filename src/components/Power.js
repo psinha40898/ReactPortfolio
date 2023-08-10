@@ -56,8 +56,6 @@ function Power() {
       recursion
     </motion.h1>
 
-  
-
     {/* <h1 class = "Kanit regularweight big"> Pyush Sinha </h1> */}
     
 
@@ -76,6 +74,11 @@ function Power() {
     <Container text textAlign="center">
         
   < PowerCalculator></PowerCalculator>
+  </Container>
+
+  <Container>
+  <motion.p>soon</motion.p>
+  
   </Container>
   </div>
   );

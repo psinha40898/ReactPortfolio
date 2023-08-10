@@ -96,8 +96,7 @@ function Home() {
    I'm a software engineer.
   </motion.h1>
   <motion.p  className = "Kanit regularweight" initial={{ opacity: 0 }} animate={{ opacity: 1 }}  transition={{duration:2.5, delay: 5, type: "spring"}} >
- I do love the English language, and I do love the mathematical concepts innate in computer science. But more than that, I love being a strong teammate to others; whether that's offering guidance to new members, taking on the role of a teacher, or simply being a reliable component in a far grander system.
- As a recent graduate, I'm eager to learn whatever technologies are required by my team. 
+ I do love the English language, and I do love the mathematical concepts innate in computer science. But more than that, I love being a strong teammate to others; whether that's offering guidance to new members, contributing to a fun and comfortable work environment, or simply being a reliable component in a robust system. As a recent graduate, I'm eager to learn whatever technologies are required by my team.
  </motion.p>
 
   <motion.p  className = "Kanit regularweight" initial={{ opacity: 0 }} animate={{ opacity: 1 }}  transition={{duration:2.5, delay: 5, type: "spring"}} >

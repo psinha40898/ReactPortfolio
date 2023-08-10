@@ -1,6 +1,6 @@
 import React from "react";
 import { Input, Menu } from 'semantic-ui-react'
-import { BrowserRouter, Route, Link, Routes} from "react-router-dom";
+import { BrowserRouter, Route, Link, Routes, HashRouter} from "react-router-dom";
 import "./App.css";
 import 'semantic-ui-css/semantic.min.css';
 import Home from "./components/Home";
@@ -11,7 +11,7 @@ import Blog1 from "./components/blogs/Blog1";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/power" element={<Power />} />
@@ -19,7 +19,7 @@ function App() {
         <Route exact path="/thoughts/blogs/Blog1" element={ <Blog1></Blog1>} />
 
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

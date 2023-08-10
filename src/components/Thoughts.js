@@ -51,14 +51,9 @@ function Thoughts() {
       className="Kanit"
        
     >
-      computers can seem really mystical test
+      these are my takes on some of the fundamental topics related to computer science
       <br></br>
-      and computer science is a young field
-      <br></br>
-      that youth can be seen by the regurgitation of explanations that consent to that mystification
-      <br></br>
-      these posts are primarily to reinforce my own understanding of topics, but i also hope that they are clear for people new to the field
-      <br></br>
+      
     </motion.p>
 
     
@@ -119,15 +114,6 @@ function Thoughts() {
       className="Kanit"
    
     >
-      done:
-      <ul>
-      <li>
-        languages
-      </li>
-      <li>
-        call stack
-      </li>
-      </ul>
       soon:
       <ul>
       <li>
