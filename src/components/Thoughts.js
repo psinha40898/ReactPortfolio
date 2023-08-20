@@ -30,7 +30,7 @@ function Thoughts() {
 
 
 
-      <Container textAlign='left' style={{ marginTop: '15rem' }}>
+      <Container textAlign='left' style={{ marginTop: '7.5rem' }}>
 
         
     {/* <h1 class = "Kanit regularweight big"> Pyush Sinha </h1> */}
@@ -63,7 +63,7 @@ function Thoughts() {
       <Container text>
         <br></br>
         <br></br>
-    <Grid className="center aligned"  columns={2} divided>
+    <Grid className="center aligned"  columns={2}>
     <Grid.Row>
       <Grid.Column>
 
@@ -114,42 +114,10 @@ function Thoughts() {
       className="Kanit"
    
     >
-      soon:
-      <ul>
-      <li>
-        complexity
-      </li>
-      <li>
-        bootstrapping
-      </li>
-      <li>
-      memory 1: abstraction
-      </li>
+      I will add more soon
+
 
    
-
-      </ul>
-      later:
-      <ul>
-
-      <li>
-        neural networks 1: xor
-      </li>
-      <li>
-        neural networks 2: training
-      </li>
-      <li>
-        memory 2: physical
-      </li>
-      <li>
-        neural networks 3 : images
-      </li>
-      <li>
-        neural networks 4 : languages
-      </li>
-
-
-      </ul>
     </motion.p>
 </Container>
 

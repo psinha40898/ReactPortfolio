@@ -21,7 +21,7 @@ function Blog1() {
 
 
 
-      <Container textAlign='left' style={{ marginTop: '15rem' }}>
+      <Container textAlign='left' style={{ marginTop: '7.5rem' }}>
   
     <motion.h1
       className="Kanit regularweight big"

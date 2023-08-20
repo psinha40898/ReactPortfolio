@@ -6,6 +6,20 @@
 img {
   border: 2px solid black;
 }
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grow-image {
+  transition: transform 0.3s ease;
+}
+
+.grow-image:hover {
+  transform: scale(1.1);
+}
 .forcedLowercase
 {
   text-transform: lowercase !important;
@@ -44,6 +58,10 @@ font-style: italic;
 {
   font-weight:400;
 }
+.heavyweight
+{
+  font-weight:900;
+}
 
 .big
 {
@@ -64,15 +82,27 @@ font-style: italic;
 
 .notbig
 {
-  font-size: 2.5rem;
+  font-size: 2.5em;
+}
+.reallynotbig
+{
+  font-size: 2em;
 }
 
 .tiny
 {
-  font-size: .60rem;
+  font-size: .80em;
+}
+.fatterp
+{
+  font-size:1.25em;
 }
 
 
+.space
+{
+  margin-top: 1em;
+}
 
 
 

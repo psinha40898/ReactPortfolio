@@ -13,7 +13,7 @@ function Power() {
     
     </Container>
 
-    <Container textAlign='left' style={{ marginTop: '10.5rem' }}>
+    <Container textAlign='left' style={{ marginTop: '6rem' }}>
       
       {/* <Container textAlign="center">
 
